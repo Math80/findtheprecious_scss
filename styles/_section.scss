@@ -1,22 +1,24 @@
 @import "./variables";
 
-@mixin ring {
+@mixin ring($baseColor, $baseRingWidth, $baseRingHeight, $params, $bord) {
     background:transparent;
     border-radius:50%;
-    width:70px;
-    height:70px;
-    border:7px solid $ringColor; 
-    -moz-box-shadow:    2px 1px 3px 4px rgb(117, 81, 52);
-    -webkit-box-shadow: 2px 1px 3px 4px rgb(117, 81, 52);
-    box-shadow:         2px 1px 3px 4px rgb(117, 81, 52);
-
-
-}
-.ring {
-    @include ring();
+    width:$baseRingWidth;
+    height:$baseRingHeight;
+    border:$bord solid $baseColor;
+    box-shadow: $params;
 }
 
-.ring-ring {
-    @include ring();
+/* @mixin box-shadow($params) {
+    box-shadow: $params;
+} */
+
+.yellow-ring {
+    @include ring($yellowRing, 100px, 100px, 2px 1px 5px 6px rgb(228, 205, 0), 9px);
+    /* @include box-shadow(#{0 0 5px rgb(228, 205, 0)}) */
 }
+
+
+
+
 

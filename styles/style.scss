@@ -4,8 +4,11 @@
 
 
 
-.loop-ring {
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+.blacks-ring {
+    @include ring($blackRing, 100px, 100px, 4px 3px 4px 2px rgb(70, 70, 70), 8px);
+    /* @include box-shadow(#{2px 3px 3px 5px rgb(0, 0, 0)}) */
+}
+
+.orange-ring {
+    @include ring($baseColor, 70px, 70px, 0px 0px 0px 0px white, 6px);
 }

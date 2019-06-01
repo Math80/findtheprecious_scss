@@ -10,6 +10,14 @@
 	font-family: "Tengwar Annatar";
 	src: url("./fonts/tngan.woff") format("woff");
 }
+.orange-ring {
+	background: transparent;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: 7px solid #f36929;
+	box-shadow: 2px 1px 3px 4px #755134;
+}
 p {
 	font-family: "party-business", arial, serif;
 }
@@ -109,19 +117,8 @@ header {
 		text-decoration: underline;
 	}
 }
-.d-md-block {
-	margin-bottom: 190px;
-}
 .h2 {
 	font-size: 4rem;
-}
-.d-none {
-	p {
-		font-size: 2rem;
-	}
-}
-.carousel-caption {
-	text-align: start;
 }
 .fellows {
 	padding-top: 40px;
@@ -131,113 +128,12 @@ header {
 	background-image: url("../images_ftp/bg_light.png") !important;
 	text-align: center;
 	height: 100vh;
-	align-items: center;
-	justify-content: center;
-}
-.ligne {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-}
-.signe-lien {
-	display: none;
-	font-family: Tengwar Annatar;
-}
-.pill_clic {
-	a {
-		&:hover {
-			color: #f36929;
-			.signe-lien {
-				color: #f36929;
-				display: contents;
-				text-decoration: underline;
-			}
-		}
-		&:focus {
-			.signe-lien {
-				color: #f36929;
-				display: contents;
-				text-decoration: underline;
-			}
-		}
-		&:active {
-			.signe-lien {
-				color: #f36929;
-				display: contents;
-				text-decoration: underline;
-			}
-		}
-	}
-}
-.parenthese {
-	font-size: 0.7em;
-}
-.signe {
-	color: #f36929;
-	font-family: Tengwar Annatar;
-	font-size: 1.5em;
-}
-.nav-pills {
-	.nav-link.active {
-		color: #f36929;
-		background-color: transparent;
-	}
-	.show {
-		>.nav-link {
-			color: #f36929;
-			background-color: transparent;
-		}
-	}
-}
-.sans {
-	display: none;
-}
-.noir {
-	color: black;
-}
-.card-body {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	p {
-		font-size: 2em;
-		color: white;
-		color: #565454;
-	}
-	>img {
-		border-radius: 55% !important;
-	}
-}
-.card-group {
-	.card {
-		background-color: black;
-		border: 3px;
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-top: 5px;
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-bottom: 100px;
-		border-radius: 2px;
-		border-top-right-radius: 2px;
-		border-bottom-right-radius: 2px;
-	}
-}
-.display-4 {
-	font-size: 1.5rem;
-	margin-bottom: 20px;
-	color: white;
-}
-.lead {
-	color: white;
+	align-items: center;
 }
 .jumbotron {
-	background-image: url("images_ftp/bg_dark.png") !important;
 	margin-bottom: 0rem;
-	background-image: none !important;
 	background-color: #f36929 !important;
 	a {
 		color: white;
@@ -247,345 +143,29 @@ header {
 		list-style: none;
 	}
 }
-.float {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-.btn {
-	display: block;
-	width: 200px;
-	margin: auto;
-}
-.btn-primary {
-	background-color: white;
-	border-color: white;
-	color: #f36929;
-	&:hover {
-		background-color: white;
-		border-color: white;
-		color: grey;
-	}
-	&:not(:disabled) {
-		&:not(.disabled).active {
-			background-color: white;
-			border-color: white;
-		}
-		&:not(.disabled) {
-			&:active {
-				background-color: white;
-				border-color: white;
-			}
-		}
-	}
-	&:focus {
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		box-shadow: none;
-	}
-}
-.show {
-	>.btn-primary.dropdown-toggle {
-		background-color: white;
-		border-color: white;
-	}
-}
-.btn-primary.focus {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	box-shadow: none;
-}
-.besthunters-bloc {
-	background-image: url("images_ftp/bg_light.png") !important;
-	margin-bottom: -2rem;
-}
-.media-body {
-	a {
-		color: black;
-	}
-	h4 {
-		font-family: "party-business";
-		font-size: 3em;
-		color: orange;
-	}
-}
-.foot {
-	border-radius: 5px;
-	background-color: #395064;
-}
-.list-group-item {
-	background-color: #E1E6E9;
-	text-align: center;
-}
-.tableau {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
 nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: space-evenly;
-	-ms-flex-pack: space-evenly;
-	justify-content: space-evenly;
-}
-.reward {
-	position: absolute;
-	z-index: 2;
-	text-align: center;
-	top: 5%;
-	left: 20%;
-	width: 60%;
-	color: black;
-	padding: 7px;
-	font-size: 2em;
-	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.8);
-}
-.name {
-	position: absolute;
-	z-index: 2;
-	top: 50%;
-	left: 25%;
-	text-align: center;
-	color: white;
-	font-size: 3em;
-	width: 45%;
 }
 .orange {
 	color: #f36929;
 }
-.card-img-top {
-	opacity: 0.7;
-	z-index: 1;
-}
-.card {
-	&:hover {
-		opacity: 1;
-		.reward {
-			opacity: 0.0;
-		}
-		.name {
-			position: absolute;
-			z-index: 2;
-			top: 50%;
-			left: 25%;
-			text-align: center;
-			color: white;
-			font-size: 2em;
-			width: 50%;
-		}
-	}
-}
-.thering-bloc {
-	background-image: url("images_ftp/bg_dark.png");
-	padding-top: 5rem;
-	padding-bottom: 0.5rem;
-	>h3 {
-		padding-left: 2rem;
-		color: white;
-	}
-	.card {
-		margin: 3rem;
-		border-top-left-radius: 2.25rem;
-		border-top-right-radius: 2.25rem;
-		border: none;
-	}
-}
-.card-header {
-	background-color: #f36929;
-	border-top-left-radius: 2.25rem !important;
-	border-top-right-radius: 2.25rem !important;
-	.card-body {
-		background-color: grey;
-	}
-}
-
 .bloc-ring {
 	width: 100%;
 	justify-content: center;
 	padding-top: 200px;
 	margin-right: 0px;
 	margin-left: 0px;
+	align-items: center;
 }
-@media screen and (max-width: 1201px) {
-	.reward {
-		position: absolute;
-		z-index: 2;
-		text-align: center;
-		top: 5%;
-		left: 20%;
-		width: 60%;
-		color: black;
-		padding: 7px;
-		font-size: 2em;
-		border-radius: 10px;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
-	.name {
-		position: absolute;
-		z-index: 2;
-		top: 60%;
-		left: 20%;
-		text-align: center;
-		color: white;
-		font-size: 3em;
-		width: 60%;
-	}
-	.card-body {
-		p {
-			font-size: 1.5em;
-		}
-	}
-	.card {
-		&:hover {
-			.name {
-				position: absolute;
-				z-index: 2;
-				top: 60%;
-				left: 25%;
-				text-align: center;
-				color: white;
-				font-size: 1.5em;
-				width: 50%;
-			}
-		}
-	}
+.big-ring {
+	justify-content: center;
+	align-items: center;
+	height: 200px;
 }
-@media screen and (max-width: 990px) {
-	.reward {
-		position: absolute;
-		z-index: 2;
-		text-align: center;
-		top: 5%;
-		left: 20%;
-		width: 60%;
-		color: black;
-		padding: 7px;
-		font-size: 1em;
-		border-radius: 10px;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
-	.name {
-		position: absolute;
-		z-index: 2;
-		top: 30%;
-		left: 25%;
-		text-align: center;
-		color: white;
-		font-size: 1.9em;
-		width: 60%;
-	}
-	.card-body {
-		p {
-			font-size: 1.5em;
-			font-size: 1.1em;
-		}
-	}
-	.card {
-		&:hover {
-			.name {
-				position: absolute;
-				z-index: 2;
-				top: 30%;
-				left: 25%;
-				text-align: center;
-				color: white;
-				font-size: 1.5em;
-				width: 50%;
-			}
-		}
-	}
-}
-@media screen and (max-width: 770px) {
-	.reward {
-		position: absolute;
-		z-index: 2;
-		text-align: center;
-		top: 3%;
-		left: 20%;
-		width: 60%;
-		color: black;
-		padding: 7px;
-		font-size: 0.7em;
-		border-radius: 10px;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
-	.name {
-		position: absolute;
-		z-index: 2;
-		top: 25%;
-		left: 25%;
-		text-align: center;
-		color: white;
-		font-size: 1em;
-		width: 45%;
-	}
-	.card-body {
-		p {
-			font-size: 0.7em;
-		}
-	}
-	.card {
-		&:hover {
-			.name {
-				position: absolute;
-				z-index: 2;
-				top: 25%;
-				left: 25%;
-				text-align: center;
-				color: white;
-				font-size: 0.7em;
-				width: 50%;
-			}
-		}
-	}
-}
-@media screen and (max-width: 576px) {
-	.reward {
-		position: absolute;
-		z-index: 2;
-		text-align: center;
-		top: 5%;
-		left: 20%;
-		width: 60%;
-		color: black;
-		padding: 7px;
-		font-size: 2em;
-		border-radius: 10px;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
-	.name {
-		position: absolute;
-		z-index: 2;
-		top: 50%;
-		left: 25%;
-		text-align: center;
-		color: white;
-		font-size: 3em;
-		width: 45%;
-	}
-	.card-body {
-		p {
-			font-size: 3em;
-		}
-	}
-	.card {
-		&:hover {
-			.name {
-				position: absolute;
-				z-index: 2;
-				top: 50%;
-				left: 25%;
-				text-align: center;
-				color: white;
-				font-size: 2em;
-				width: 50%;
-			}
-		}
-	}
+.loop-ring {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 200px;
 }
