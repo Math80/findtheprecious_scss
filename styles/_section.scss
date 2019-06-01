@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin ring {
+    background:transparent;
+    border-radius:50%;
+    width:70px;
+    height:70px;
+    border:7px solid $ringColor; 
+    -moz-box-shadow:    2px 1px 3px 4px rgb(117, 81, 52);
+    -webkit-box-shadow: 2px 1px 3px 4px rgb(117, 81, 52);
+    box-shadow:         2px 1px 3px 4px rgb(117, 81, 52);
+
+
+}
+.ring {
+    @include ring();
+}
+
+.ring-ring {
+    @include ring();
+}
+
