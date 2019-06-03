@@ -1,14 +1,39 @@
 @import "./section";
 @import "./variables";
-@import "./all";
 
-
-
-.blacks-ring {
-    @include ring($blackRing, 100px, 100px, 4px 3px 4px 2px rgb(70, 70, 70), 8px);
-    /* @include box-shadow(#{2px 3px 3px 5px rgb(0, 0, 0)}) */
+@mixin myRing($size, $color) {
+    /* common rules */
+    background:transparent;
+    border-radius:50%;
+    border-color: $color;
+    border-style: solid;
+    width:$size;
+    height:$size;
+    
+    /* specific rules */
+    @if ($size < 71 and $color == orange) {
+        border-width: 6px;
+        box-shadow: 0px 0px 0px 0px white;
+    } @else if ($color == black) {
+        border-width: 6px;
+        box-shadow: 4px 3px 4px 2px rgb(70, 70, 70);
+    }@else {
+        border-width: 12px;
+        box-shadow: 2px 1px 5px 6px rgb(224, 224, 0);
+    }
 }
 
 .orange-ring {
-    @include ring($baseColor, 70px, 70px, 0px 0px 0px 0px white, 6px);
+    @include myRing(70px, orange);
+}
+.yellow-ring {
+    @include myRing(150px, yellow);
+}
+
+@for $i from 1 through 6 {
+    .blacks-ring-#{$i} {
+        position: relative;
+        left: ($i - 1) * -15px;
+        @include myRing($i*25px, black);
+    }
 }

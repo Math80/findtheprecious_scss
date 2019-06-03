@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "aniron";
+  src: url("./fonts/anicb___.woff") format("woff");
+}
+
+@font-face {
+  font-family: "party-business";
+  src: url("./fonts/partybusiness.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Tengwar Annatar";
+  src: url("./fonts/tngan.woff") format("woff");
+}
+
+.orange-ring {
+  background: transparent;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 7px solid #f36929;
+  -webkit-box-shadow: 2px 1px 3px 4px #755134;
+          box-shadow: 2px 1px 3px 4px #755134;
+}
+
+p {
+  font-family: "party-business", arial, serif;
+}
+
+a {
+  font-family: "party-business", arial, serif;
+  font-family: aniron, arial, serif;
+}
+
+th {
+  font-family: "party-business", arial, serif;
+}
+
+td {
+  font-family: "party-business", arial, serif;
+}
+
+input {
+  font-family: "party-business", arial, serif;
+}
+
+select {
+  font-family: "party-business", arial, serif;
+}
+
+textarea {
+  font-family: "party-business", arial, serif;
+}
+
+h2 {
+  font-family: "party-business", arial, serif;
+  font-size: 4rem;
+}
+
+h1 {
+  font-family: aniron, arial, serif;
+}
+
+h3 {
+  font-family: aniron, arial, serif;
+}
+
+h4 {
+  font-family: aniron, arial, serif;
+}
+
+h5 {
+  font-family: aniron, arial, serif;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+header {
+  background-color: #395064;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.8rem;
+  padding-right: 2rem;
+}
+
+.bg-light {
+  background-color: #f36929 !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #fef5ce;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #fef5ce;
+  border-right: 1px solid #fef5ce;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fef5ce;
+  border-right: 1px solid #fef5ce;
+}
+
+.navbar-light .navbar-nav .nav-link.show {
+  color: #fef5ce;
+  border-right: 1px solid #fef5ce;
+}
+
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fef5ce;
+  border-right: 1px solid #fef5ce;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration: underline;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+}
+
+.nav-link:focus {
+  text-decoration: underline;
+}
+
+.h2 {
+  font-size: 4rem;
+}
+
+.fellows {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.fellow-bloc {
+  background-image: url("../images_ftp/bg_light.png") !important;
+  text-align: center;
+  height: 100vh;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  background-color: #f36929 !important;
+}
+
+.jumbotron a {
+  color: white;
+  list-style: none;
+}
+
+.jumbotron ul {
+  list-style: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orange {
+  color: #f36929;
+}
+
+.bloc-ring {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big-ring {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.loop-ring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+/*# sourceMappingURL=all.css.map */
