@@ -32,8 +32,9 @@
 
 @for $i from 1 through 6 {
     .blacks-ring-#{$i} {
-        position: relative;
-        left: ($i - 1) * -15px;
+        margin-left: -7px*$i;
+        /* position: relative;
+        left: ($i - 1) * -15px; */
         @include myRing($i*25px, black);
     }
 }
